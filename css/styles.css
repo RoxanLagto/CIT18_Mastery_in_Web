@@ -1,6 +1,6 @@
 body {
-    background-image: url(../images/profile.png);
-    background-size: 33.5%;
+    background-image: url(../images/profile.jpg);
+    background-size: 27%;
     background-repeat: no-repeat;
     background-color: #000;
     font-family: Arial, sans-serif;
@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #ffffff;
 }
 
 .h2 {
@@ -27,11 +28,10 @@ body {
 
 .box {
     background: #333;
-    border: 1px solid #0c0101;
     padding: 20px;
     margin: 10px;
     text-align: center;
-    width: 350px;
+    width: 380px;
     height: 200px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -41,10 +41,11 @@ body {
     font-weight: 900;
     color: #DAA520;
     display: inline;
+    padding-top: 50px;
 }
 
 .color-white {
-    font-weight: 900;
+    font-weight: 700;
     color: #FFFFFF;
     display: inline;
 }
@@ -54,20 +55,24 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-main {
+.main-container {
     flex-grow: 1;
     padding: 20px;
-    display: none; /* Initially hide the main content */
+    display: none; 
 }
 
 .content-section {
-    display: none; /* Initially hide all sections */
+    display: none; 
 }
 
-footer {
-    background: #000;
-    color: #fff;
+.content-section.active {
+    display: block; 
+}
+
+.footer {
+    background: #000000;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
     position: relative;
+    margin-top: -40px;
 }
