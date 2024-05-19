@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAGTO - Personal Information</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="javascript/script.js" defer></script>
+    <script src="javascript/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,36 +16,59 @@
             <h2 style="color: white; font-weight: 900; display: inline;">WEB</h2>
             <h2 class="h2">DEVELOPER</h2>
         </div>
-        <div class="box" onclick="showSection('about')">
-            <h1 class="color-yellow">ABOUT</h1>
-            <h1 class="color-white">ME</h1>
+        <div class="box" onclick="toggleBox(this)">
+            <h1 id="color-yellow">ABOUT</h1>
+            <h1 id="color-white">ME</h1>
+            <div class="details">
+                <div class="line-container">
+                    <div class="line"></div>
+                    <img id="about-image" src="../CIT18_Mastery_in_Web/images/aboutme.png">
+                    <div class="line"></div>
+                </div>
+                <h3><img id="information-image" src="../CIT18_Mastery_in_Web/images/person.png"> Personal Information</h3>
+                <p>I'm Roxan Lagto, a student at the University of the Cordilleras taking up Bachelor of Science in Information Technology</p>
+                <h4>First Name: Roxan</h4>
+                <h4>Last Name: Lagto</h4>
+                <h4>Age: 21</h4>
+                <h4>Nationality: Filipino</h4>
+                <div class="education-box">
+                    <h3><img id="education-image" src="../CIT18_Mastery_in_Web/images/education.png"> Education</h3>
+                    
+                </div>
+                <div class="skills-box">
+                    <h3><img id="skills-image" src="../CIT18_Mastery_in_Web/images/skills.png"> Skills</h3>
+                    
+                </div>
+            </div>
         </div>
-        <div class="box" onclick="showSection('myportfolio')">
-            <h1 class="color-white">MY</h1>
-            <h1 class="color-yellow">PORTFOLIO</h1>
+        <div class="box" onclick="toggleBox(this)">
+            <h1 id="color-white">MY</h1>
+            <h1 id="color-yellow">PORTFOLIO</h1>
+            <div class="details">
+                <div class="line-container">
+                    <div class="line"></div>
+                    <img id="portfolio-image" src="../CIT18_Mastery_in_Web/images/works.png">
+                    <div class="line"></div>
+                </div>
+                <h3>Works</h3>
+                <p>This is the detailed MY PORTFOLIO section content.</p>
+            </div>
         </div>
-        <div class="box" onclick="showSection('getintouch')">
-            <h1 class="color-yellow">GET IN</h1>
-            <h1 class="color-white">TOUCH</h1>
+        <div class="box" onclick="toggleBox(this)">
+            <h1 id="color-yellow">GET IN</h1>
+            <h1 id="color-white">TOUCH</h1>
+            <div class="details">
+                <div class="line-container">
+                    <div class="line"></div>
+                    <img id="contact-image" src="../CIT18_Mastery_in_Web/images/contact.png">
+                    <div class="line"></div>
+                </div>
+                <h3>Contact</h3>
+                <p>This is the detailed GET IN TOUCH section content.</p>
+            </div>
         </div>
     </div>
 
-    <main class="main-container">
-        <div id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>This is the about section content.</p>
-        </div>
-        <div id="myportfolio" class="content-section">
-            <h2>My Portfolio</h2>
-            <p>This is the portfolio section content.</p>
-        </div>
-        <div id="getintouch" class="content-section">
-            <h2>Get In Touch</h2>
-            <p>This is the contact section content.</p>
-        </div>
-    </main>
-
-    
-        <p class="footer">&copy; 2024 Roxan Lagto. All rights reserved.</p>
+    <p class="footer">&copy; 2024 Roxan Lagto. All rights reserved.</p>
 </body>
 </html>
