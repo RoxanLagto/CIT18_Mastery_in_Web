@@ -4,6 +4,7 @@ body {
     background-image: url(../images/profile.jpg);
     background-size: 26.5vw;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #000;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -44,6 +45,7 @@ body {
     text-align: left;}
 
 .box.expanded {
+    background-image: hidden;
     width: 50vw;
     height: fit-content;}
 
@@ -93,7 +95,7 @@ body {
     height: 5vh;
     width: 2vw;}
 
-#information-image, #works-image {
+#information-image, #works-image, #email-info, #facebook-info, #phone-info {
     height: 5vh;
     width: 3vw;}
 
@@ -142,6 +144,10 @@ h3 {font-size: 17.5px;}
 
 .work-gallery{margin-top: -35px;}
 
+.star{
+    color: #DAA520;
+}
+
 .pasahereos, .goodjob, .fordatravel{display: flex;}
 
 .pasahereos, .goodjob, .fordatravel > img{
@@ -152,9 +158,7 @@ h3 {font-size: 17.5px;}
 
 .content-section.active {display: block;}
 
-.footer {
+footer {
     background: #000000;
     color: #ffffff;
-    text-align: center;
-    position: relative;
-    margin-top: -40px;}
+    text-align: center;}
