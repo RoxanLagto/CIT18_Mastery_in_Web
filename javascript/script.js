@@ -12,6 +12,4 @@ function showSection(sectionId) {
     if (sectionToShow) {
         sectionToShow.classList.add('active');
     }
-
-    document.querySelector('main').style.display = 'block';
 }

@@ -1,6 +1,4 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
-}
+* {font-family: 'Courier New', Courier, monospace;}
 
 body {
     background-image: url(../images/profile.jpg);
@@ -14,21 +12,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #ffffff;
-}
+    color: #ffffff;}
 
 .h2 {
     font-weight: 700;
     color: #EAAD10;
-    display: inline;
-}
+    display: inline;}
 
 .container {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
-    justify-content: flex-end;
-}
+    justify-content: flex-end;}
 
 .box {
     background: #333;
@@ -40,123 +35,126 @@ body {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
     overflow: hidden;
-    position: relative;
-}
+    position: relative;}
 
 .box .details {
     opacity: 0;
     transition: opacity 0.3s;
     overflow: hidden;
-    text-align: left;
-}
+    text-align: left;}
 
 .box.expanded {
     width: 50vw;
-    height: 180vh;
-}
+    height: fit-content;}
 
 .box.expanded .details {
     opacity: 1;
-    max-height: 170vh;
-}
+    max-height: 170vh;}
 
-.person-info >h4{
-    margin-left: 45px;
-}
+.person-info >h4{margin-left: 45px;}
 
 .details > img {
     margin: 0 10px;
     display: flex;
-    align-items: center;
-}
+    align-items: center;}
 
 .line-container {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 800px;
-}
+    max-width: 800px;}
 
 .line {
     flex-grow: 1;
     height: 1px;
-    background-color: #D3D3D3;
-}
+    background-color: #D3D3D3;}
 
 #color-yellow {
     font-weight: 900;
     color: #DAA520;
     display: inline-flex;
-    margin-top: 50px;
-}
+    margin-top: 50px;}
 
 #color-white {
     font-weight: 700;
     color: #FFFFFF;
     display: inline-flex;
-    margin-top: 50px;
-}
+    margin-top: 50px;}
 
 .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);}
 
 #about-image, #portfolio-image, #education-image, #skills-image {
     height: 6vh;
-    width: 3vw;
-}
+    width: 3vw;}
 
 #contact-image {
     height: 5vh;
-    width: 2vw;
-}
+    width: 2vw;}
 
-#information-image {
+#information-image, #works-image {
     height: 5vh;
-    width: 3vw;
-}
+    width: 3vw;}
+
+#works-image{
+    height: 10vh;
+    width: 5vw;}
 
 .flex-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 51vw;
-}
+    width: 51vw;}
 
-.education-box, .skills-box {
+.education-box, .skills-box{
     border: 1px solid whitesmoke;
     width: 15vw;
     height: 12vh;
-    text-align: center;
-}
+    text-align: center;}
 
-h3 {
-    font-size: 17.5px;
-}
+.works-box, .contacts-box > h2{text-align: center;}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 160px;
+    font-size: 15px;}
+
+a:hover{color: #0000FF;}
+
+h3 {font-size: 17.5px;}
 
 .education-contents, .undergraduate {
     text-align: start;
-    width: 23vw;
-}
+    width: 23vw;}
 
 .skills-contents {
     text-align: start;
-    width: 23vw;
-}
+    width: 23vw;}
 
-.content-section {
-    display: none;
-}
+.gallery-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; 
+    padding: 10px 0; 
+    box-sizing: border-box;}
 
-.content-section.active {
-    display: block;
-}
+.work-gallery{margin-top: -35px;}
+
+.pasahereos, .goodjob, .fordatravel{display: flex;}
+
+.pasahereos, .goodjob, .fordatravel > img{
+    height: 200px;
+    margin-right: 10px;}
+
+.content-section {display: none;}
+
+.content-section.active {display: block;}
 
 .footer {
     background: #000000;
     color: #ffffff;
     text-align: center;
     position: relative;
-    margin-top: -40px;
-}
+    margin-top: -40px;}
