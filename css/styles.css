@@ -51,7 +51,7 @@ body {
 
 .box.expanded .details {
     opacity: 1;
-    max-height: 170vh;}
+    height: fit-content;}
 
 .person-info >h4{margin-left: 45px;}
 
@@ -121,7 +121,8 @@ a{
     text-decoration: none;
     color: #FFFFFF;
     margin-top: 160px;
-    font-size: 15px;}
+    font-size: 15px;
+    text-align: center;}
 
 a:hover{color: #0000FF;}
 
@@ -144,20 +145,14 @@ h3 {font-size: 17.5px;}
 
 .work-gallery{margin-top: -35px;}
 
-.star{
-    color: #DAA520;
-}
+.star{color: #DAA520;}
 
 .pasahereos, .goodjob, .fordatravel{display: flex;}
 
 .pasahereos, .goodjob, .fordatravel > img{
     height: 200px;
-    margin-right: 10px;}
-
-.content-section {display: none;}
-
-.content-section.active {display: block;}
-
+    justify-content: center;}
+    
 footer {
     background: #000000;
     color: #ffffff;
