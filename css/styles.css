@@ -1,4 +1,6 @@
-*{font-family: 'Courier New', Courier, monospace;}
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 body {
     background-image: url(../images/profile.jpg);
@@ -12,18 +14,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #ffffff;}
+    color: #ffffff;
+}
 
 .h2 {
     font-weight: 700;
     color: #EAAD10;
-    display: inline;}
+    display: inline;
+}
 
 .container {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
-    justify-content: flex-end;}
+    justify-content: flex-end;
+}
 
 .box {
     background: #333;
@@ -35,87 +40,123 @@ body {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
     overflow: hidden;
-    position: relative;}
+    position: relative;
+}
 
 .box .details {
     opacity: 0;
     transition: opacity 0.3s;
     overflow: hidden;
-    text-align: left;}
+    text-align: left;
+}
 
 .box.expanded {
     width: 50vw;
-    height: 200vh;}
+    height: 180vh;
+}
 
 .box.expanded .details {
     opacity: 1;
-    max-height: 180vh;}
+    max-height: 170vh;
+}
 
-.details > img{
+.person-info >h4{
+    margin-left: 45px;
+}
+
+.details > img {
     margin: 0 10px;
     display: flex;
-    align-items: center;}
+    align-items: center;
+}
 
-.line-container{
+.line-container {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 800px;}
+    max-width: 800px;
+}
 
-.line{
+.line {
     flex-grow: 1;
     height: 1px;
-    background-color: #D3D3D3;}
+    background-color: #D3D3D3;
+}
 
 #color-yellow {
     font-weight: 900;
     color: #DAA520;
     display: inline-flex;
-    margin-top: 50px;}
+    margin-top: 50px;
+}
 
 #color-white {
     font-weight: 700;
     color: #FFFFFF;
     display: inline-flex;
-    margin-top: 50px;}
+    margin-top: 50px;
+}
 
 .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);}
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
 #about-image, #portfolio-image, #education-image, #skills-image {
     height: 6vh;
-    width: 3vw;}
+    width: 3vw;
+}
 
-#contact-image{
+#contact-image {
     height: 5vh;
-    width: 2vw;}
+    width: 2vw;
+}
 
-#information-image{
+#information-image {
     height: 5vh;
-    width: 3vw;}
+    width: 3vw;
+}
 
-.education-box, .skills-box { 
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 51vw;
+}
+
+.education-box, .skills-box {
     border: 1px solid whitesmoke;
     width: 15vw;
     height: 12vh;
-    display: inline-block;
-    margin-inline: 40px;
-    text-align: center;}
-
-h3{font-size: 17.5px;}
-
-.education-contents, .undergraduate{
-    text-align: left;
+    text-align: center;
 }
 
-.content-section {display: none;}
+h3 {
+    font-size: 17.5px;
+}
 
-.content-section.active {display: block;}
+.education-contents, .undergraduate {
+    text-align: start;
+    width: 23vw;
+}
+
+.skills-contents {
+    text-align: start;
+    width: 23vw;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
 
 .footer {
     background: #000000;
     color: #ffffff;
     text-align: center;
     position: relative;
-    margin-top: -40px;}
+    margin-top: -40px;
+}
