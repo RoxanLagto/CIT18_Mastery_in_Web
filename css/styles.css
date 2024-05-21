@@ -44,6 +44,12 @@ body {
     position: relative;
 }
 
+#welcome{
+    background-image: url(../images/bg/welcome.jpg);
+    background-size: 43vw;
+    background-repeat: no-repeat;
+}
+
 .box .details {
     opacity: 0;
     transition: opacity 0.3s;
